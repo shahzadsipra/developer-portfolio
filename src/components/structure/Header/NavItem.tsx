@@ -28,33 +28,3 @@ export const NavItem: React.FC<NavItemProps> = ({ name, href, onClose }) => {
   )
 }
 
-// 'use client'
-// import { useTranslation } from 'next-i18next'
-// import type { TFuncKey } from 'i18next'
-// import NextLink from 'next/link'
-// import { useRouter,usePathname } from 'next/navigation'
-// import { Button } from '@chakra-ui/react'
-
-// export interface NavItemProps {
-//   name: TFuncKey<'common'>
-//   href: string
-//   onClose: () => void
-// }
-
-// export const NavItem: React.FC<NavItemProps> = ({ name, href, onClose }) => {
-//   const { t } = useTranslation('common')
-//   const pathname  = usePathname()
-
-//   return (
-//     <NextLink href={href} passHref legacyBehavior>
-//       <Button
-//         as='a'
-//         aria-current={pathname === href ? 'page' : 'false'}
-//         variant='navItem'
-//         onClick={onClose}
-//       >
-//         {t(name)}
-//       </Button>
-//     </NextLink>
-//   )
-// }
